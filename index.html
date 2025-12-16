@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strange Circle | Executive AI Cohort</title>
+    <title>Strange Circle | AI Leadership Cohort</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
@@ -16,219 +16,552 @@
         .text-glow {
             text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         }
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body class="bg-black text-zinc-300 antialiased selection:bg-zinc-800 selection:text-white">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 border-b border-zinc-900 bg-black/80 backdrop-blur-md">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="text-white font-medium tracking-[0.2em] text-sm uppercase">Strange Circle</div>
             <a href="#diagnostic" class="text-xs font-medium tracking-widest uppercase hover:text-white transition-colors duration-300">
-                Request Invitation
+                Take Diagnostic
             </a>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-900 via-black to-black opacity-50"></div>
         
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
-            <p class="text-zinc-500 tracking-[0.3em] text-xs uppercase mb-8 animate-fade-in-up">An Exclusive Invitation</p>
+            <p class="text-zinc-500 tracking-[0.3em] text-xs uppercase mb-8">An Invitation-Only Peer Cohort</p>
             <h1 class="text-5xl md:text-7xl font-light text-white tracking-tight leading-[1.1] mb-8 text-glow">
-                Navigate the chaos <br />
-                of AI adoption.
+                You're making decisions <br />
+                about AI in isolation. <br />
+                <span class="text-zinc-400">So is everyone else.</span>
             </h1>
             <p class="text-lg md:text-xl font-light text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-12">
-                An invite-only peer group for senior executives navigating organizational complexity.
+                Strange Circle brings together 6-8 leaders facing similar tensions—governance, talent, infrastructure, culture. Not to get advice. To think through problems with people who actually get it.
             </p>
             <div class="flex flex-col md:flex-row gap-6 justify-center">
-                <a href="#diagnostic" class="bg-white text-black px-8 py-4 text-xs font-semibold tracking-widest uppercase hover:bg-zinc-200 transition-all">
-                    Check Eligibility
+                <a href="#diagnostic" class="bg-white text-black px-10 py-4 text-xs font-semibold tracking-widest uppercase hover:bg-zinc-200 transition-all">
+                    Take the 10-minute diagnostic →
                 </a>
             </div>
+            <p class="text-zinc-500 text-sm mt-6">
+                See your archetype. Then we'll talk about whether this makes sense for you.
+            </p>
         </div>
     </header>
 
+    <!-- Problem Section -->
     <section class="py-24 border-t border-zinc-900 bg-zinc-950">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-3xl font-light text-white mb-6">The Landscape Changes Weekly.</h2>
-                <p class="text-zinc-400 font-light leading-relaxed mb-6">
-                    Your organization is under pressure to show AI progress. But internal pilots feel scattered, and you are not sure if you are moving fast enough, or in the right direction.
-                </p>
-                <p class="text-zinc-400 font-light leading-relaxed">
-                    You are making decisions in isolation. Without knowing what is actually working for organizations like yours.
-                </p>
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-light text-white mb-6">The pressure is real. The playbook doesn't exist.</h2>
             </div>
-            <div class="glass-panel p-10 md:p-12">
-                <blockquote class="text-xl md:text-2xl text-white font-light italic leading-relaxed mb-6">
-                    "Not delivering is not an option."
-                </blockquote>
-                <div class="w-12 h-[1px] bg-zinc-700 mb-6"></div>
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div>
+                    <p class="text-zinc-400 font-light leading-relaxed mb-6">
+                        Your organization expects AI progress. But internal pilots feel scattered. Vendors pitch solutions that don't translate. Consultants deliver decks, not traction.
+                    </p>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        You're making bets in isolation—without knowing what peers at similar organizations are actually doing.
+                    </p>
+                </div>
+                <div class="glass-panel p-10">
+                    <blockquote class="text-xl md:text-2xl text-white font-light italic leading-relaxed mb-6">
+                        "I know what I'm dealing with. What I need is to hear how others are thinking about the same problems."
+                    </blockquote>
+                    <div class="w-12 h-[1px] bg-zinc-700 mb-6"></div>
+                    <p class="text-zinc-500 text-sm">
+                        <span class="text-white">— Chief Digital Officer</span><br>
+                        Fortune 500 Retail
+                    </p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
                 <p class="text-zinc-500 text-sm">
-                    <span class="text-white">75%</span> of executives report feeling pressure from leadership to implement generative-AI initiatives.
-                    <br><span class="text-xs uppercase tracking-wider mt-2 block opacity-60">— Gartner</span>
+                    <span class="text-white font-medium">75%</span> of executives report pressure from leadership to implement generative AI initiatives.
+                    <span class="text-xs uppercase tracking-wider opacity-60 block mt-2">— Gartner, 2024</span>
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- The Insight Section -->
     <section class="py-32 bg-black">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="mb-20 text-center max-w-2xl mx-auto">
-                <h2 class="text-white text-3xl font-light mb-4">Matched by Organizational DNA</h2>
-                <p class="text-zinc-400 font-light">
-                    Unlike generic executive programs, we do not match by sector. We match by complexity.
+            <div class="mb-20 text-center max-w-3xl mx-auto">
+                <h2 class="text-white text-3xl md:text-4xl font-light mb-8 leading-tight">
+                    A Dreamer in fintech has more in common with a Dreamer in healthcare than with the Optimizer down the hall.
+                </h2>
+                <p class="text-zinc-400 font-light text-lg leading-relaxed mb-6">
+                    We don't match you by industry. We match you by how you're approaching the problem.
+                </p>
+                <p class="text-zinc-400 font-light leading-relaxed">
+                    Some leaders have high vision but struggle with execution. Others run efficient operations but question direction. Some are moving fast without alignment. Others have buy-in but lack infrastructure.
+                </p>
+                <p class="text-zinc-300 font-light leading-relaxed mt-6">
+                    The tension you're navigating matters more than your sector.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-1px bg-zinc-900 border border-zinc-900">
-                <div class="bg-black p-10 hover:bg-zinc-950 transition-colors">
-                    <h3 class="text-white text-lg font-normal mb-3">Readiness Framework</h3>
-                    <p class="text-sm text-zinc-500 leading-relaxed">
-                        Proprietary matching based on your actual constraints: leadership alignment and change resistance patterns.
-                    </p>
+            <!-- Enhanced 2x2 Matrix with Archetype Descriptions -->
+            <div class="max-w-5xl mx-auto mb-16">
+                <div class="relative grid grid-cols-2 gap-1 bg-zinc-800">
+                    
+                    <!-- Optimizer (Top Left) -->
+                    <div class="bg-zinc-950 p-8 md:p-10 border-2 border-zinc-800 hover:border-zinc-700 transition-colors">
+                        <div class="mb-4">
+                            <h3 class="text-white text-xl font-medium mb-2">Optimizer</h3>
+                            <p class="text-zinc-600 text-xs uppercase tracking-wider">High Execution • Low Motivation</p>
+                        </div>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            You run a tight ship. Your efficiency is high, and you know how to deliver. But there's a nagging feeling—maybe you're getting really efficient at doing things the old way.
+                        </p>
+                    </div>
+
+                    <!-- Transformer (Top Right) -->
+                    <div class="bg-zinc-950 p-8 md:p-10 border-2 border-zinc-800 hover:border-zinc-700 transition-colors">
+                        <div class="mb-4">
+                            <h3 class="text-white text-xl font-medium mb-2">Transformer</h3>
+                            <p class="text-zinc-600 text-xs uppercase tracking-wider">High Execution • High Motivation</p>
+                        </div>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            You've figured out how to balance vision with execution. You're setting the standard. The danger now isn't failure—it's complacency.
+                        </p>
+                    </div>
+
+                    <!-- Tinkerer (Bottom Left) -->
+                    <div class="bg-zinc-950 p-8 md:p-10 border-2 border-zinc-800 hover:border-zinc-700 transition-colors">
+                        <div class="mb-4">
+                            <h3 class="text-white text-xl font-medium mb-2">Tinkerer</h3>
+                            <p class="text-zinc-600 text-xs uppercase tracking-wider">Low Execution • Low Motivation</p>
+                        </div>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            You have incredible energy and curiosity. You're trying things, learning fast. But it can feel like you're shouting into the void—lots of activity, maybe not enough traction.
+                        </p>
+                    </div>
+
+                    <!-- Dreamer (Bottom Right) -->
+                    <div class="bg-zinc-950 p-8 md:p-10 border-2 border-zinc-800 hover:border-zinc-700 transition-colors">
+                        <div class="mb-4">
+                            <h3 class="text-white text-xl font-medium mb-2">Dreamer</h3>
+                            <p class="text-zinc-600 text-xs uppercase tracking-wider">Low Execution • High Motivation</p>
+                        </div>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            You see what AI could do. You've imagined the possibilities. But when it comes to making it real, something always gets in the way.
+                        </p>
+                    </div>
+
+                    <!-- Axis Labels -->
+                    <div class="absolute -left-24 top-1/2 -translate-y-1/2 -rotate-90">
+                        <p class="text-zinc-600 text-xs uppercase tracking-widest font-bold">Execution</p>
+                    </div>
+                    <div class="absolute -bottom-12 left-1/2 -translate-x-1/2">
+                        <p class="text-zinc-600 text-xs uppercase tracking-widest font-bold">Motivation</p>
+                    </div>
                 </div>
-                <div class="bg-black p-10 hover:bg-zinc-950 transition-colors">
-                    <h3 class="text-white text-lg font-normal mb-3">Small Cohorts</h3>
-                    <p class="text-sm text-zinc-500 leading-relaxed">
-                        Strictly limited to 8-12 senior executives per group to ensure deep trust and high-fidelity signal.
-                    </p>
-                </div>
-                <div class="bg-black p-10 hover:bg-zinc-950 transition-colors">
-                    <h3 class="text-white text-lg font-normal mb-3">Cross-Industry</h3>
-                    <p class="text-sm text-zinc-500 leading-relaxed">
-                        Benchmark against peers in retail, healthcare, finance, and manufacturing who share your technical maturity.
-                    </p>
-                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#diagnostic" class="inline-block text-white hover:text-zinc-300 transition-colors text-sm font-medium">
+                    Discover your archetype →
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- The Experience Section -->
     <section class="py-24 bg-zinc-950 border-y border-zinc-900">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="grid lg:grid-cols-12 gap-12">
-                <div class="lg:col-span-5">
-                    <h3 class="text-white text-xl font-light mb-8">The Quarterly Cadence</h3>
-                    <ul class="space-y-8 border-l border-zinc-800 pl-8">
-                        <li class="relative">
-                            <span class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-zinc-800 border-2 border-black"></span>
-                            <strong class="block text-white font-normal mb-1">2 In-Person Sessions</strong>
-                            <p class="text-sm text-zinc-500">February kickoff + October summit.</p>
+            <div class="mb-16 text-center">
+                <p class="text-zinc-500 tracking-[0.3em] text-xs uppercase mb-4">What You Get</p>
+                <h2 class="text-white text-3xl md:text-4xl font-light">Four gatherings. Ongoing access. No bullshit.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Column 1: The Gatherings -->
+                <div class="glass-panel p-8">
+                    <h3 class="text-white text-lg font-normal mb-6">The Gatherings</h3>
+                    <ul class="space-y-4 text-sm text-zinc-400">
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">2 in-person sessions per year</strong><br>New York (Feb kickoff) + San Francisco (Oct summit)</span>
                         </li>
-                        <li class="relative">
-                            <span class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-zinc-800 border-2 border-black"></span>
-                            <strong class="block text-white font-normal mb-1">2 Virtual Deep-Dives</strong>
-                            <p class="text-sm text-zinc-500">Strategy focused remote gatherings.</p>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">2 virtual deep-dives</strong><br>Strategy-focused, not status updates</span>
                         </li>
-                        <li class="relative">
-                            <span class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-zinc-800 border-2 border-black"></span>
-                            <strong class="block text-white font-normal mb-1">Monthly Community</strong>
-                            <p class="text-sm text-zinc-500">Facilitated discussions and private Slack access.</p>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">Monthly community calls</strong><br>With your cohort + the Strange Circle team</span>
                         </li>
                     </ul>
                 </div>
 
-                <div class="lg:col-span-7">
-                    <h3 class="text-white text-xl font-light mb-8">Curriculum & Output</h3>
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        <div class="glass-panel p-6">
-                            <h4 class="text-white text-sm uppercase tracking-wider mb-3">Tactical Playbooks</h4>
-                            <p class="text-xs text-zinc-400">Scaling AI in bureaucratic environments without heavy reliance on consultants.</p>
-                        </div>
-                        <div class="glass-panel p-6">
-                            <h4 class="text-white text-sm uppercase tracking-wider mb-3">Budget Strategies</h4>
-                            <p class="text-xs text-zinc-400">How peers are securing investment and maintaining momentum.</p>
-                        </div>
-                        <div class="glass-panel p-6">
-                            <h4 class="text-white text-sm uppercase tracking-wider mb-3">Pilot Autopsies</h4>
-                            <p class="text-xs text-zinc-400">Case studies on real outcomes: what's working, what's failing, and why.</p>
-                        </div>
-                        <div class="glass-panel p-6">
-                            <h4 class="text-white text-sm uppercase tracking-wider mb-3">Frontier Access</h4>
-                            <p class="text-xs text-zinc-400">Direct access to Strange portfolio builders testing frontier AI.</p>
-                        </div>
-                    </div>
+                <!-- Column 2: The Network -->
+                <div class="glass-panel p-8">
+                    <h3 class="text-white text-lg font-normal mb-6">The Network</h3>
+                    <ul class="space-y-4 text-sm text-zinc-400">
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">Direct access to the core team</strong><br>Tara, Sandeep, and David</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">Ongoing group chat</strong><br>Private Slack with your cohort</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">Signal through the noise</strong><br>Through Strange VC: What's actually emerging in tech—not the hype, but insights from founders building it</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: The Curriculum -->
+                <div class="glass-panel p-8">
+                    <h3 class="text-white text-lg font-normal mb-6">The Curriculum</h3>
+                    <ul class="space-y-4 text-sm text-zinc-400">
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">Tactical playbooks</strong><br>Scaling AI without heavy reliance on consultants</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">Pilot autopsies</strong><br>What's working, what's failing, and why</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">Budget strategies</strong><br>How peers are securing investment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-white mr-2">•</span>
+                            <span><strong class="text-zinc-300">Frontier access</strong><br>Direct line to Strange portfolio companies testing frontier AI</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Who This Is For Section -->
     <section class="py-24 bg-black">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-2xl text-white font-light mb-12">Design your culture, or it will design itself.</h2>
-            <div class="glass-panel p-10 text-left md:text-center">
-                <p class="text-zinc-300 font-light text-lg leading-relaxed mb-4">
-                    This is for VPs of AI, CDOs, Heads of Innovation, and Product Leaders at <span class="text-white font-normal">$500M+ organizations</span>.
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl text-white font-light mb-6">
+                    This is for leaders who are accountable for outcomes—not just experiments.
+                </h2>
+            </div>
+            <div class="glass-panel p-10 md:p-12">
+                <p class="text-zinc-300 font-light text-lg leading-relaxed mb-6">
+                    VPs of AI. Chief Digital Officers. Heads of Innovation. Product Leaders at <span class="text-white font-normal">$500M+ organizations</span>.
                 </p>
-                <p class="text-zinc-500 text-sm">
-                    You must have budget authority, organizational complexity, and a mandate to show progress.
+                <p class="text-zinc-400 font-light leading-relaxed mb-6">
+                    You have budget authority. You're navigating organizational complexity. You have a mandate to show progress. And you're making decisions faster than your organization has frameworks for.
+                </p>
+                <p class="text-zinc-400 font-light leading-relaxed mb-6">
+                    This isn't for people figuring out if AI matters. It's for people figuring out how to make it work at scale.
+                </p>
+                <p class="text-zinc-300 font-light">
+                    If this sounds like where you are, let's talk.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-zinc-950">
+    <!-- Team Section -->
+    <section class="py-32 bg-zinc-950 border-t border-zinc-900">
         <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-white text-3xl md:text-4xl font-light mb-4">Built by people who've done this work at scale.</h2>
+                <p class="text-zinc-400 font-light max-w-2xl mx-auto">
+                    Not theorists. Practitioners who've led transformation at organizations you know—and understand where frameworks break down.
+                </p>
+            </div>
+
+            <!-- Core Team -->
+            <div class="grid md:grid-cols-3 gap-8 mb-20">
+                <!-- Tara Tan -->
+                <div class="glass-panel p-8">
+                    <div class="mb-6">
+                        <h3 class="text-white text-xl font-medium mb-1">Tara Tan</h3>
+                        <p class="text-zinc-500 text-sm">Co-Founder, Strange Circle</p>
+                    </div>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                        Former COO at Unruly (acquired by News Corp). Led product and operations at VideoGenie (acquired by Tremor Video). Built and scaled teams across London, New York, Singapore.
+                    </p>
+                    <p class="text-zinc-300 text-sm font-light">
+                        20+ years turning ambiguous problems into repeatable systems.
+                    </p>
+                </div>
+
+                <!-- Sandeep Pahuja -->
+                <div class="glass-panel p-8">
+                    <div class="mb-6">
+                        <h3 class="text-white text-xl font-medium mb-1">Sandeep Pahuja</h3>
+                        <p class="text-zinc-500 text-sm">Co-Founder, Strange Circle</p>
+                    </div>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                        Managing Director at Luminary Innovation. Former VP of Innovation at DBS Bank, where he built their digital transformation practice and led enterprise-wide AI adoption.
+                    </p>
+                    <p class="text-zinc-300 text-sm font-light">
+                        Led workshops with 10,000+ employees across APAC. Designs systems that actually scale inside bureaucratic organizations.
+                    </p>
+                </div>
+
+                <!-- David Beath -->
+                <div class="glass-panel p-8">
+                    <div class="mb-6">
+                        <h3 class="text-white text-xl font-medium mb-1">David Beath</h3>
+                        <p class="text-zinc-500 text-sm">Co-Founder, Strange Circle</p>
+                    </div>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                        20+ years leading innovation at IDEO, Capital One, DBS Bank, 3Pillar Global. At IDEO Singapore, doubled studio revenue and led large-scale transformation programs.
+                    </p>
+                    <p class="text-zinc-300 text-sm font-light">
+                        At DBS, consolidated 4,000 workflows into 200 and upskilled 5,000+ employees in AI tools—work that generated $30M+ in new revenue.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Extended Team -->
+            <div class="border-t border-zinc-900 pt-16">
+                <div class="text-center mb-12">
+                    <h3 class="text-white text-xl font-light mb-4">Extended Team</h3>
+                </div>
+                
+                <!-- Logo Grid -->
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 mb-12 opacity-60">
+                    <div class="text-zinc-600 text-sm font-medium">MIT MEDIA LAB</div>
+                    <div class="text-zinc-600 text-sm font-medium">IDEO</div>
+                    <div class="text-zinc-600 text-sm font-medium">GOOGLE</div>
+                    <div class="text-zinc-600 text-sm font-medium">MICROSOFT</div>
+                    <div class="text-zinc-600 text-sm font-medium">IxDF</div>
+                    <div class="text-zinc-600 text-sm font-medium">FROG</div>
+                </div>
+
+                <p class="text-zinc-400 text-sm leading-relaxed max-w-3xl mx-auto text-center mb-8">
+                    Our partners include <span class="text-zinc-300">Cory Kidd</span> (MIT Media Lab, Catalia Health), <span class="text-zinc-300">Nelly Mensah</span> (Interaction Design Foundation, Microsoft), and <span class="text-zinc-300">Burton Rast</span> (Google, frog, IDEO).
+                </p>
+                <p class="text-zinc-500 text-sm text-center">
+                    They've led transformation work at organizations where change is hard—and know where theory meets reality.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-24 bg-black border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-white text-3xl font-light mb-4">The investment</h2>
+                <p class="text-zinc-400 font-light">We're transparent about what this costs—and what you get.</p>
+            </div>
+
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Individual -->
                 <div class="border border-zinc-800 p-10 flex flex-col justify-between hover:border-zinc-600 transition-colors">
                     <div>
-                        <h3 class="text-white text-lg font-medium mb-2">Executive Seat</h3>
-                        <p class="text-zinc-500 text-sm mb-8">Individual Access</p>
-                        <div class="text-4xl text-white font-light mb-2">$30k</div>
-                        <p class="text-zinc-600 text-xs uppercase tracking-wider">Per Year</p>
+                        <h3 class="text-white text-lg font-medium mb-2">Individual Seat</h3>
+                        <p class="text-zinc-500 text-sm mb-8">Single Executive Access</p>
+                        <div class="mb-8">
+                            <div class="text-4xl text-white font-light mb-2">$25k – $30k</div>
+                            <p class="text-zinc-600 text-xs uppercase tracking-wider">Per Year</p>
+                        </div>
                     </div>
-                    <div class="mt-10 pt-10 border-t border-zinc-900">
+                    <div class="pt-8 border-t border-zinc-900">
+                        <p class="text-sm text-zinc-500 mb-4 font-medium">What's included:</p>
                         <ul class="text-sm text-zinc-400 space-y-2">
-                            <li>• All 4 Quarterly Sessions</li>
-                            <li>• Private Community Access</li>
-                            <li>• Diagnostic Profile</li>
+                            <li>• All 4 quarterly gatherings (2 in-person, 2 virtual)</li>
+                            <li>• Ongoing access to your cohort + the Strange Circle team</li>
+                            <li>• Private Slack community</li>
+                            <li>• Direct access to Strange VC network</li>
+                            <li>• Your diagnostic profile + ongoing archetype coaching</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- Team -->
                 <div class="border border-zinc-700 bg-zinc-900/30 p-10 flex flex-col justify-between relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-white text-black text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Best Value</div>
+                    <div class="absolute top-0 right-0 bg-white text-black text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Recommended</div>
                     <div>
                         <h3 class="text-white text-lg font-medium mb-2">Team Access</h3>
-                        <p class="text-zinc-500 text-sm mb-8">For 3 Executives</p>
-                        <div class="text-4xl text-white font-light mb-2">$75k</div>
-                        <p class="text-zinc-600 text-xs uppercase tracking-wider">Total Per Year</p>
+                        <p class="text-zinc-500 text-sm mb-8">Up to 3 from your organization</p>
+                        <div class="mb-8">
+                            <div class="text-4xl text-white font-light mb-2">Group Rate</div>
+                            <p class="text-zinc-600 text-xs uppercase tracking-wider">Contact for Pricing</p>
+                        </div>
                     </div>
-                    <div class="mt-10 pt-10 border-t border-zinc-800">
-                        <ul class="text-sm text-zinc-400 space-y-2">
-                            <li>• Same Organization</li>
-                            <li>• Shared Context & Language</li>
-                            <li>• Accelerated Implementation</li>
-                        </ul>
+                    <div class="pt-8 border-t border-zinc-800">
+                        <p class="text-sm text-zinc-300 mb-4 leading-relaxed">
+                            Sometimes the most valuable thing is having allies inside who are learning the same things at the same time. Shared language. Shared context. Faster implementation.
+                        </p>
+                        <a href="mailto:david@thisisluminary.co" class="text-white text-sm hover:text-zinc-300 transition-colors">
+                            Contact us for team pricing →
+                        </a>
                     </div>
                 </div>
             </div>
-            <p class="text-center text-zinc-600 text-sm mt-12">First cohort launches February 2026.</p>
+            <p class="text-center text-zinc-600 text-sm mt-12">
+                First cohort launches <span class="text-zinc-400">February 2026</span>. Limited to <span class="text-zinc-400">8 leaders per cohort</span>.
+            </p>
         </div>
     </section>
 
-    <section id="diagnostic" class="py-24 bg-black border-t border-zinc-900">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl text-white font-light mb-6">Start Here.</h2>
-            <p class="text-zinc-400 mb-10 font-light">
-                Before you join, we must understand your organization's AI readiness. 
-                Complete our diagnostic to see your profile and cohort match.
-            </p>
-            
-            <a href="mailto:david@thisisluminary.co" class="inline-block bg-white text-black px-10 py-5 text-sm font-semibold tracking-widest uppercase hover:bg-zinc-200 transition-all mb-12">
-                Take the Diagnostic
-            </a>
+    <!-- How It Works Section -->
+    <section class="py-24 bg-zinc-950 border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-white text-3xl font-light">How this works</h2>
+            </div>
 
-            <div class="pt-16 border-t border-zinc-900 text-left md:text-center">
-                <p class="text-xs text-zinc-600 uppercase tracking-widest mb-4">About Strange</p>
-                <p class="text-zinc-500 text-sm leading-relaxed max-w-xl mx-auto mb-8">
-                    Strange is a Silicon Valley-based investment and innovation firm founded by builders from IDEO, Google, Harvard, and MIT. We invest in next-generation tech startups and work directly with founders shipping AI products at the edge.
-                </p>
-                <a href="http://www.strangevc.com" class="text-zinc-400 text-xs hover:text-white transition-colors">www.strangevc.com</a>
+            <div class="grid md:grid-cols-3 gap-1 bg-zinc-900 border border-zinc-900 max-w-4xl mx-auto">
+                <div class="bg-black p-10 relative">
+                    <div class="absolute top-6 left-6 w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center text-white text-sm font-medium">1</div>
+                    <div class="mt-12">
+                        <h3 class="text-white text-lg font-normal mb-3">Take the diagnostic</h3>
+                        <p class="text-sm text-zinc-400 leading-relaxed">
+                            10 minutes. You'll see where you fall on motivation vs. execution.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-black p-10 relative">
+                    <div class="absolute top-6 left-6 w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center text-white text-sm font-medium">2</div>
+                    <div class="mt-12">
+                        <h3 class="text-white text-lg font-normal mb-3">We talk</h3>
+                        <p class="text-sm text-zinc-400 leading-relaxed">
+                            30-minute conversation. We'll show you where you compare to other leaders and explore whether a cohort makes sense.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-black p-10 relative">
+                    <div class="absolute top-6 left-6 w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center text-white text-sm font-medium">3</div>
+                    <div class="mt-12">
+                        <h3 class="text-white text-lg font-normal mb-3">You decide</h3>
+                        <p class="text-sm text-zinc-400 leading-relaxed">
+                            If it's a fit, we match you with 6-8 leaders facing similar tensions. First gathering: February 2026.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#diagnostic" class="inline-block bg-white text-black px-10 py-4 text-xs font-semibold tracking-widest uppercase hover:bg-zinc-200 transition-all">
+                    Start with the diagnostic →
+                </a>
             </div>
         </div>
     </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-black border-t border-zinc-900">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-white text-3xl font-light">Questions people ask</h2>
+            </div>
+
+            <div class="space-y-12">
+                <!-- FAQ Item -->
+                <div class="border-b border-zinc-900 pb-8">
+                    <h3 class="text-white text-lg font-normal mb-4">How are cohorts matched?</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        We use a diagnostic that maps where you sit on motivation vs. execution, then have a real conversation. We match based on the tensions you're navigating—not your industry, not your title. A Dreamer in fintech has more in common with a Dreamer in healthcare than with the Optimizer down the hall.
+                    </p>
+                </div>
+
+                <div class="border-b border-zinc-900 pb-8">
+                    <h3 class="text-white text-lg font-normal mb-4">What if my organization isn't "ready" for AI?</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        If your organization is still building the business case for why AI matters, this probably isn't the right moment. But if you're past that—and now navigating implementation, governance, talent, culture—this is exactly who we built this for.
+                    </p>
+                </div>
+
+                <div class="border-b border-zinc-900 pb-8">
+                    <h3 class="text-white text-lg font-normal mb-4">Is this a vendor pitch?</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        No. We're not selling software. We're not consultants looking for projects. This is peer learning—facilitated by people who've done this work, with access to a network of founders building frontier AI. That's it.
+                    </p>
+                </div>
+
+                <div class="border-b border-zinc-900 pb-8">
+                    <h3 class="text-white text-lg font-normal mb-4">What's the time commitment?</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        Four gatherings per year (2 in-person, 2 virtual). Monthly community calls. Ongoing Slack access. You engage as much or as little as you want between gatherings—but the value comes from showing up.
+                    </p>
+                </div>
+
+                <div class="border-b border-zinc-900 pb-8">
+                    <h3 class="text-white text-lg font-normal mb-4">Why Strange VC?</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        We invest in next-generation tech startups. That means we have direct access to founders building at the edge—not what's hyped, but what's actually emerging. That signal is part of what you get.
+                    </p>
+                </div>
+
+                <div class="border-b border-zinc-900 pb-8">
+                    <h3 class="text-white text-lg font-normal mb-4">Can I bring my team?</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        Yes. We're exploring group rates for up to 3 people from the same organization. Sometimes the leverage is having allies inside who are learning the same things.
+                    </p>
+                </div>
+
+                <div class="pb-8">
+                    <h3 class="text-white text-lg font-normal mb-4">What happens after the first year?</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        Many cohorts continue. Some evolve. We'll figure that out together based on what's valuable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="diagnostic" class="py-32 bg-zinc-950 border-t border-zinc-900">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl text-white font-light mb-6">See where you fall in the framework.</h2>
+            <p class="text-zinc-400 mb-10 font-light leading-relaxed">
+                Take the diagnostic. 10 minutes. You'll get your archetype—Tinkerer, Dreamer, Optimizer, or Transformer—and we'll invite you to a conversation about what a cohort might look like.
+            </p>
+            <p class="text-zinc-500 mb-10 text-sm">
+                No pitch. No obligation. Just a conversation about whether this makes sense for where you are.
+            </p>
+            
+            <a href="https://your-diagnostic-url.com" class="inline-block bg-white text-black px-12 py-5 text-sm font-semibold tracking-widest uppercase hover:bg-zinc-200 transition-all mb-6">
+                Take the diagnostic →
+            </a>
+
+            <p class="text-zinc-600 text-sm">
+                Questions? Email us: <a href="mailto:david@thisisluminary.co" class="text-zinc-400 hover:text-white transition-colors">david@thisisluminary.co</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-black border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-xs text-zinc-600 uppercase tracking-widest mb-4">About Strange</p>
+                <p class="text-zinc-500 text-sm leading-relaxed max-w-2xl mx-auto mb-8">
+                    Strange is a Silicon Valley-based investment and innovation firm. We invest in next-generation tech startups and work directly with founders shipping AI products at the edge.
+                </p>
+                <a href="http://www.strangevc.com" class="text-zinc-400 text-sm hover:text-white transition-colors">www.strangevc.com</a>
+            </div>
+
+            <div class="text-center pt-8 border-t border-zinc-900">
+                <p class="text-zinc-600 text-xs">
+                    Team backgrounds include: IDEO, Google, MIT, Harvard, Capital One, DBS Bank, LVMH, Microsoft
+                </p>
+                <p class="text-zinc-700 text-xs mt-6">
+                    © 2025 Strange Circle. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
